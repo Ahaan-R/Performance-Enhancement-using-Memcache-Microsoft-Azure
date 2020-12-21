@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+{% block content %}
+
+Q 7
+<p>
+<form action="/countrycode" method="get">
+
+    Country code<input type="text" name="code" maxlength="200" width="60"> <br/>
+
+<p>Please wait as it takes time to load</p>
+    <input type="submit" value="Submit"><br/><br/>
+</form>
+</p>
+
+Q 8
+<p>
+
+<form action="/ques8" method="get">
+   Country code<input type="text" name="code1" maxlength="200" width="60"> <br/>
+<p>Please wait as it takes time to load</p>
+    <input type="submit" value="Submit"><br/><br/>
+</form>
+</p>
+
+Q 9
+<p>
+
+<form action="/ques9" method="get">
+    Year Range from(Please enter valid values)<input type="text" name="yearfrom" maxlength="200" width="60"> <br/>
+    Year Range to(Please enter valid values)<input type="text" name="yearto" maxlength="200" width="60"><br/>
+     Cost Range from(Please enter valid values)<input type="text" name="costfrom" maxlength="200" width="60"> <br/>
+    Cost Range to(Please enter valid values)<input type="text" name="costto" maxlength="200" width="60"><br/>
+    <p>Please wait as it takes time to load</p>
+    <input type="submit" value="Submit"><br/><br/>
+</form>
+</p>
+
+
+Q 10A- Multiple run for Q8
+<p>
+
+<form action="/ques10a" method="get">
+   Country code<input type="text" name="code1" maxlength="200" width="60"> <br/>
+   Number of queries to run:<input type="text" name="nom" maxlength="200" width="60"></br>
+
+<p>Please wait as it takes time to load</p>
+    <input type="submit" value="Submit"><br/><br/>
+</form>
+</p>
+
+
+Q 10B- Multiple run for Q9
+<p>
+
+<p>
+
+<form action="/ques10b" method="get">
+    Year Range from(Please enter valid values)<input type="text" name="yearfrom" maxlength="200" width="60"> <br/>
+    Year Range to(Please enter valid values)<input type="text" name="yearto" maxlength="200" width="60"><br/>
+     Cost Range from(Please enter valid values)<input type="text" name="costfrom" maxlength="200" width="60"> <br/>
+    Cost Range to(Please enter valid values)<input type="text" name="costto" maxlength="200" width="60"><br/>
+    Number of queries to run:<input type="text" name="nom" maxlength="200" width="60"></br>
+
+    <p>Please wait as it takes time to load</p>
+    <input type="submit" value="Submit"><br/><br/>
+</form>
+</p>
+
+
+
+
+{% endblock %}

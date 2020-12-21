@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block content %}
+{% for row in ci %}
+     {{row}}
+
+<p>The total time is <b>({{en}})</b> <br>
+
+{% endfor %}
+</p><br>
+<a href="/"><input class="button3" type="button" value="Home"></a> <br>
+
+ {% endblock %}

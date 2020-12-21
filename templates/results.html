@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block content %}
+{% for row in data %}
+ <table class="table table-hover table-dark">
+                <tr>
+<tr>
+
+
+                    <th>Time</th>
+                    <th>Latitude</th>
+                    <th>Longitude</th>
+
+                </tr>
+ <tr>
+
+            <td>{{ row.time }}</td>
+            <td>{{ row[latitude] }}</td>
+            <td>{{ row["longitude"] }}</td>
+
+    </tr>
+ </table>
+
+    {% endfor %}
+</p><br>
+<a href="/"><input class="button3" type="button" value="Home"></a> <br>
+{% endblock %}
